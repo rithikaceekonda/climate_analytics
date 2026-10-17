@@ -1,0 +1,30 @@
+@'
+# Python
+venv/
+venv312/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated datasets and analytical outputs
+data/raw/
+data/processed/
+
+# Large downloaded Spark dependency
+docker/jars/aws-java-sdk-bundle-1.12.262.jar
+
+# Logs
+*.log
+'@ | Set-Content -Encoding utf8 .gitignore
